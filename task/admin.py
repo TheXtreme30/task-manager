@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Todo
+from .models import Task
 
-class TodoAdmin(admin.ModelAdmin):
+class TaskAdmin(admin.ModelAdmin):
     readonly_fields = ('created',)
 
-admin.site.register(Todo, TodoAdmin)
+admin.site.register(Task, TaskAdmin)
